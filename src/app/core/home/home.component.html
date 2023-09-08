@@ -1,0 +1,306 @@
+<div class="container" dir="rtl">
+
+  <div class="add-resources">
+    <div class="add-right">
+      <div class="arrow-right">
+        <img src="./assets/imgs/arrow-right.svg" alt="Arrow Right" />
+      </div>
+      <p>اضافة موارد جديدة</p>
+    </div>
+
+    <div class="add-left">
+      <a href="">
+        <img src="./assets/imgs/Toggle.svg" alt="Toggle" />
+      </a>
+      <p>مفعلة</p>
+      <button class="btn btn-dark">حفظ التغييرات</button>
+      <a href="" class="delete-resource btn">
+        <img class="trash" src="./assets/imgs/trash.svg" alt="Delete" />
+        <p>حذف الموارد</p>
+      </a>
+    </div>
+  </div>
+
+  <div id="resource-data">
+    <div>
+      <div class="resource-data">
+        <div class="d-flex justify-content-between align-items-center">
+          <img class="avatar" src="./assets/imgs/Image-100.png" alt="Avatar" />
+          <div class="add-avatar d-flex justify-content-center align-items-center">
+            <img class="gallery" src="./assets/imgs/gallery.svg" alt="">
+          </div>
+        </div>
+        <div class="name">
+          <p class="title">اسم الموارد</p>
+          <div class="resource-name">
+            <p>هيثم محمد</p>
+          </div>
+        </div>
+      </div>
+      <div class="resource-type">
+        <p>اختر نوع المورد</p>
+        <div>
+          <input type="radio" name="" id="" />
+          <label for="">حجز خلال اليوم</label>
+        </div>
+        <div>
+          <input type="radio" name="" id="" />
+          <label for="">حجز مدة ( أكثر من يوم )</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="reserve-data">
+      <p class="available">المورد متاح الي</p>
+      <div class="available-time input-group">
+        <input dir="ltr" type="number" class="form-control" style="background-color: #F6F2F2;" />
+        <div class="available-month d-flex justify-content-center align-items-center input-group-text">
+          <span class="input-group-prepend mb-3" id="inputGroup-sizing-default">شهر
+          </span>
+          <img src="./assets/imgs/arrow-down.svg" alt="" />
+        </div>
+      </div>
+      <p class="available">وقت المورد</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <input class="available-time-item" type="radio" name="" id="service-time" />
+            <img class="available-time-item" src="./assets/imgs/box-time.svg" alt="" />
+            <label class="available-time-item" for="">وقت الخدمة</label>
+          </div>
+          <div>
+            <input class="available-time-item" type="radio" name="" id="" />
+            <img class="available-time-item" src="./assets/imgs/clock.svg" alt="" />
+            <label class="available-time-item fixed-time" for="">الوقت ثابت</label>
+          </div>
+        </div>
+
+        <div class="time d-flex justify-content-between align-items-center">
+          <button class="btn btn-primary m-1">+</button>
+          <p class="mt-3">30 دقيقة</p>
+          <button class="btn btn-primary m-1">-</button>
+        </div>
+
+      </div>
+
+      <div class="d-inline-flex">
+        <p class="available">الحجز المتعدد</p>
+        <img class="info-circle" src="./assets/imgs/info-circle.svg" alt="">
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <input class="available-time-item" type="radio" name="" id="service-time" />
+            <img class="available-time-item" src="./assets/imgs/box-time.svg" alt="" />
+            <label class="available-time-item" for="">حجز واحد فقط</label>
+          </div>
+          <div>
+            <input class="available-time-item" type="radio" name="" id="" />
+            <img class="available-time-item" src="./assets/imgs/clock.svg" alt="" />
+            <label class="available-time-item fixed-time" for="">حجز اكثر من شخص لنفس الموعد</label>
+          </div>
+        </div>
+
+        <div class="time input-group d-flex">
+          <input dir="ltr" type="number" class="form-control reserve-time" style="background-color: #F6F2F2;"/>
+            <span class="input-group-prepend mt-3" id="inputGroup-sizing-default">موعد</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="days-setup mt-4 mb-1">
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <p class="resource-days">حدد مواعيد العمل للمورد</p>
+        <p class="week-setup">تكوين إعدادات الأسبوع الخاص بك هنا. ما عليك سوى تحريك أشرطة التمرير وإضافة / إزالة أوقات الراحة لإعداد ساعات العمل.</p>
+      </div>
+      <div class="settings d-flex justify-content-between align-items-center">
+        <button class="btn btn-light m-2">اعدادات متقدمة</button>
+        <button class="btn btn-primary m-2">اعدادات تقليدية</button>
+      </div>
+    </div>
+
+    <div class="sat mb-5 form-check form-switch d-flex justify-content-between align-items-center">
+      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+      <label class="form-check-label pt-2" for="flexSwitchCheckDefault">السبت</label>
+    </div>
+
+    <div class="week-days d-flex justify-content-between align-items-center">
+      <div class="sat mb-5 form-check form-switch d-flex justify-content-between align-items-center">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+        <label class="form-check-label pt-2" for="flexSwitchCheckChecked">الاحد</label>
+      </div>
+
+      <div>
+        <p class="start-time-text">وقت البدء</p>
+        <div class="start-time d-flex justify-content-between align-items-center">
+          <p class="m-2">09:00 صباحا</p>
+          <img class="m-2 available-time-item" src="./assets/imgs/clock.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="space">--</div>
+
+      <div>
+        <p class="end-time-text">وقت الانتهاء</p>
+        <div class="end-time d-flex justify-content-between align-items-center">
+          <p class="select-time-text m-2">اختر الوقت</p>
+          <img class="m-2 available-time-item" src="./assets/imgs/clock.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="add-dropdown d-flex justify-content-center align-items-center">
+        <img src="./assets/imgs/add.svg" alt="">
+      </div>
+
+      <div class="copy d-flex justify-content-center align-items-center">
+        <img src="./assets/imgs/Group 1000009757.svg" alt="">
+      </div>
+
+    </div>
+
+    <div class="week-days d-flex justify-content-between align-items-center">
+      <div class="sat mb-5 form-check form-switch d-flex justify-content-between align-items-center">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+        <label class="form-check-label pt-2" for="flexSwitchCheckChecked">الاثنين</label>
+      </div>
+
+      <div>
+        <p class="start-time-text">وقت البدء</p>
+        <div class="start-time d-flex justify-content-between align-items-center">
+          <p class="m-2">09:00 صباحا</p>
+          <img class="m-2 available-time-item" src="./assets/imgs/clock.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="space">--</div>
+
+      <div>
+        <p class="end-time-text">وقت الانتهاء</p>
+        <div class="end-time d-flex justify-content-between align-items-center">
+          <p class="select-time-text m-2">اختر الوقت</p>
+          <img class="m-2 available-time-item" src="./assets/imgs/clock.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="add-dropdown d-flex justify-content-center align-items-center">
+        <img src="./assets/imgs/add.svg" alt="">
+      </div>
+
+      <div class="copy d-flex justify-content-center align-items-center">
+        <img src="./assets/imgs/Group 1000009757.svg" alt="">
+      </div>
+
+    </div>
+
+    <div class="week-days d-flex justify-content-between align-items-center">
+      <div class="sat mb-5 form-check form-switch d-flex justify-content-between align-items-center">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+        <label class="form-check-label pt-2" for="flexSwitchCheckChecked">الثلاثاء</label>
+      </div>
+
+      <div>
+        <p class="start-time-text">وقت البدء</p>
+        <div class="start-time d-flex justify-content-between align-items-center">
+          <p class="m-2">09:00 صباحا</p>
+          <img class="m-2 available-time-item" src="./assets/imgs/clock.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="space">--</div>
+
+      <div>
+        <p class="end-time-text">وقت الانتهاء</p>
+        <div class="end-time d-flex justify-content-between align-items-center">
+          <p class="select-time-text m-2">اختر الوقت</p>
+          <img class="m-2 available-time-item" src="./assets/imgs/clock.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="add-dropdown d-flex justify-content-center align-items-center">
+        <img src="./assets/imgs/add.svg" alt="">
+      </div>
+
+      <div class="copy d-flex justify-content-center align-items-center">
+        <img src="./assets/imgs/Group 1000009757.svg" alt="">
+      </div>
+
+    </div>
+
+    <div class="week-days d-flex justify-content-between align-items-center">
+      <div class="sat mb-5 form-check form-switch d-flex justify-content-between align-items-center">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+        <label class="form-check-label pt-2" for="flexSwitchCheckChecked">الاربعاء</label>
+      </div>
+
+      <div>
+        <p class="start-time-text">وقت البدء</p>
+        <div class="start-time d-flex justify-content-between align-items-center">
+          <p class="m-2">09:00 صباحا</p>
+          <img class="m-2 available-time-item" src="./assets/imgs/clock.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="space">--</div>
+
+      <div>
+        <p class="end-time-text">وقت الانتهاء</p>
+        <div class="end-time d-flex justify-content-between align-items-center">
+          <p class="select-time-text m-2">اختر الوقت</p>
+          <img class="m-2 available-time-item" src="./assets/imgs/clock.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="add-dropdown d-flex justify-content-center align-items-center">
+        <img src="./assets/imgs/add.svg" alt="">
+      </div>
+
+      <div class="copy d-flex justify-content-center align-items-center">
+        <img src="./assets/imgs/Group 1000009757.svg" alt="">
+      </div>
+
+    </div>
+
+    <div class="week-days d-flex justify-content-between align-items-center">
+      <div class="sat mb-5 form-check form-switch d-flex justify-content-between align-items-center">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+        <label class="form-check-label pt-2" for="flexSwitchCheckChecked">الخميس</label>
+      </div>
+
+      <div>
+        <p class="start-time-text">وقت البدء</p>
+        <div class="start-time d-flex justify-content-between align-items-center">
+          <p class="m-2">09:00 صباحا</p>
+          <img class="m-2 available-time-item" src="./assets/imgs/clock.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="space">--</div>
+
+      <div>
+        <p class="end-time-text">وقت الانتهاء</p>
+        <div class="end-time d-flex justify-content-between align-items-center">
+          <p class="select-time-text m-2">اختر الوقت</p>
+          <img class="m-2 available-time-item" src="./assets/imgs/clock.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="add-dropdown d-flex justify-content-center align-items-center">
+        <img src="./assets/imgs/add.svg" alt="">
+      </div>
+
+      <div class="copy d-flex justify-content-center align-items-center">
+        <img src="./assets/imgs/Group 1000009757.svg" alt="">
+      </div>
+
+    </div>
+
+    <div class="sat mb-5 form-check form-switch d-flex justify-content-between align-items-center">
+      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+      <label class="form-check-label pt-2" for="flexSwitchCheckDefault">الجمعة</label>
+    </div>
+
+  </div>
+</div>

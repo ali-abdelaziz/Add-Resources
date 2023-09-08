@@ -1,0 +1,366 @@
+
+/* Add and delete resources */
+
+.add-resources {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-right {
+  width: 250px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7eaed;
+  border-radius: 17px;
+  width: 57px;
+  height: 57px;
+  padding: 17px;
+}
+
+.add-right p {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+  margin-top: 20px;
+}
+
+.add-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.add-left a img {
+  margin-left: 28px;
+}
+
+.add-left p {
+  margin-left: 37px;
+  margin-top: 20px;
+}
+
+.add-left .btn-dark {
+  height: 50px;
+  width: 173px;
+  margin-left: 25px;
+  padding: 17px 61px 22px 37px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+}
+
+.delete-resource {
+  width: 152px;
+  height: 57px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  border: 1px solid #ff4b55;
+  background: #fff6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-resource.trash {
+  width: 24px;
+  height: 24px;
+}
+
+.delete-resource p {
+  color: #FF4B55;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 175% */
+margin-left: 0;
+}
+
+/* Resources main data */
+
+#resource-data {
+  margin-top: 37px;
+  display: flex;
+}
+
+.resource-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 622px;
+  height: 208px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #FAF9F9;
+}
+
+.avatar {
+  border-radius: 50px;
+  width: 100px;
+  height: 124px;
+  flex-shrink: 0;
+  margin: 43px 58px 41px 20px;
+  /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+}
+
+.add-avatar {
+  width: 26px;
+  height: 26px;
+  background-color: #0771DE;
+  border-radius: 100px;
+  float: left;
+  margin-right: -45px;
+  margin-top: -80px;
+}
+
+.gallery {
+  width: 14px;
+  height: 14px;
+}
+
+
+.title {
+  color: #92A1AD;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.resource-name {
+  width: 410px;
+  height: 65.935px;
+  margin-left: 20px;
+  border-radius: 9px;
+  border: 1px solid #B2A6A6;
+  background: #F4EEEE;
+}
+
+.resource-name p {
+  padding-top: 20px;
+  padding-right: 20px;
+  color: #1C1C28;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.resource-type {
+  width: 622px;
+  height: 69.779px;
+  border-radius: 13px;
+  background: #FFFDFD;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.resource-type p {
+  width: 75px;
+  height: 14.953px;
+  color: #92A1AD;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  margin: 18px 23px 26px 50px;
+}
+
+.resource-type input {
+  margin-left: 20px;
+}
+
+.resource-type label {
+  margin-left: 60px;
+}
+
+
+/* Reserve data */
+
+.reserve-data {
+  width: 640px;
+  height: 313.008px;
+  border-radius: 12px;
+  background: #F7F7F7;
+  margin-right: 37px;
+}
+
+/* .input-group-prepend {
+  display: flex;
+} */
+
+.reserve-data .available {
+  margin: 20px 30px 2px auto;
+}
+
+.reserve-data .available-time {
+  margin: 17px 20px 20px 40px;
+  width: 600px;
+  height: 40px;
+  border-radius: 9px;
+  border: 1px solid #D9D9D9;
+  background: #F6F2F2;
+}
+
+.reserve-data .available-month {
+  width: 117.615px;
+  height: 54.751px;
+  flex-shrink: 0;
+  border-radius: 6px 0px 0px 6px;
+  border: 1px solid #E7E7E8;
+  background: #ECF1F6;
+}
+
+.reserve-data .available-month span {
+  margin-left: 22px;
+  width: 20.328px;
+  height: 9.327px;
+  color: #1C1C28;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.reserve-data #service-time {
+  margin-right: 30px;
+}
+
+.reserve-data .available-time-item {
+  margin-left: 10px;
+}
+
+/* .reserve-data .fixed-time {
+  margin-left: 60px;
+} */
+
+.time {
+  width: 200px;
+  height: 54.924px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  border: 1px solid #D9D9D9;
+  background: #F6F2F2;
+  margin-left: 15px;
+}
+
+.reserve-time {
+  border-radius: 0px;
+}
+
+.time span {
+  width: 60px;
+  text-align: center;
+}
+
+.info-circle {
+  margin-right: 10px;
+  text-align: center;
+}
+
+
+/* Days setup */
+
+.days-setup {
+  width: 100%;
+  height: 900px;
+  border-radius: 12px;
+  background: #FBFBFB;
+}
+
+.resource-days {
+  padding: 33px 65px 0px 0px;
+}
+
+.week-setup {
+  width: 651.044px;
+  height: 10.965px;
+  margin-right: 65px;
+  color: #92A1AD;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.settings {
+  width: 260px;
+  height: 57px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 1.5px solid #F5F5F5;
+  background: #FBFBFB;
+}
+
+.sat {
+  width: 120px;
+  margin-right: 30px;
+  /* size: 20px; */
+}
+
+.sat input {
+  font-size: 20px;
+}
+
+.week-days {
+  width: 900px;
+  margin-bottom: 27px;
+}
+
+.start-time, .end-time {
+  width: 250px;
+  height: 53px;
+  border-radius: 9px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+}
+
+.space {
+  width: 15.094px;
+  height: 11.962px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: #1C1C28;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.add-dropdown, .copy {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #F1F3F4;
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.start-time-text, .end-time-text, .select-time-text {
+  color: #92A1AD;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.hidden {
+  visibility: hidden;
+}
