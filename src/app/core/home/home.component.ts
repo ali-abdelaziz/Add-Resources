@@ -7,4 +7,24 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  showFixedTime: boolean = false
+  showDatesCount: boolean = false
+  showDaysSetup: boolean = false
+
+  ngOnInit() {
+
+  }
+
+  toggleFixedTime() {
+    this.showFixedTime=!this.showFixedTime
+  }
+
+  toggleDatesCount() {
+    this.showDatesCount =! this.showDatesCount
+  }
+
+  toggleDaysSetup() {
+    this.showDaysSetup =! this.showDaysSetup
+  }
+
 }
